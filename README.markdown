@@ -1,4 +1,4 @@
-This contains my [Jekyll][https://github.com/mojombo/jekyll] generated blog.
+This contains my [Jekyll](https://github.com/mojombo/jekyll) generated blog.
 
 ## License
 
