@@ -1,0 +1,62 @@
+/* Main */
+/* line 2, ../sass/screen.sass */
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #4261df;
+}
+
+/* line 6, ../sass/screen.sass */
+body {
+  font: 16px/160% "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif;
+  width: 800px;
+  margin: 70px auto 0 auto;
+}
+/* line 11, ../sass/screen.sass */
+body h1 {
+  font: 40px;
+  color: #4261df;
+}
+
+/* Code Blocks */
+/* line 17, ../sass/screen.sass */
+pre, code {
+  font: 15px "droid-sans-mono-1", "droid-sans-mono-2", monospace;
+}
+
+/* line 19, ../sass/screen.sass */
+pre {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  border: 1px solid #d9d9d9;
+  border-bottom-left-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
+  padding: 15px;
+  overflow-x: auto;
+}
+/* line 31, ../sass/screen.sass */
+pre code {
+  border: none;
+}
+
+/* line 34, ../sass/screen.sass */
+p code {
+  background-color: #f8f8ff;
+  color: #444444;
+  padding: 0 0.2em;
+  border: 1px solid #dedede;
+}
+
+/* line 40, ../sass/screen.sass */
+.post {
+  padding-bottom: 35px;
+}
+
+/* line 43, ../sass/screen.sass */
+#footer {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
