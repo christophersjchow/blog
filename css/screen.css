@@ -7,23 +7,41 @@ a, a:hover, a:visited {
 
 /* line 6, ../sass/screen.sass */
 body {
-  font: 16px/160% "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif;
-  width: 800px;
+  font: 15px/150% "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif;
+  width: 750px;
   margin: 70px auto 0 auto;
 }
+
 /* line 11, ../sass/screen.sass */
-body h1 {
-  font: 40px;
+h1 {
+  font-size: 40px;
   color: #4261df;
 }
 
-/* Code Blocks */
-/* line 17, ../sass/screen.sass */
-pre, code {
-  font: 15px "droid-sans-mono-1", "droid-sans-mono-2", monospace;
+/* line 15, ../sass/screen.sass */
+h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 15px 0 0 0;
 }
 
-/* line 19, ../sass/screen.sass */
+/* line 20, ../sass/screen.sass */
+h3 {
+  font-size: 15px;
+}
+
+/* line 23, ../sass/screen.sass */
+h2 + p {
+  margin-top: 0.5em;
+}
+
+/* Code Blocks */
+/* line 27, ../sass/screen.sass */
+pre, code {
+  font: 14px "droid-sans-mono-1", "droid-sans-mono-2", monospace;
+}
+
+/* line 29, ../sass/screen.sass */
 pre {
   width: 80%;
   margin: 0 auto;
@@ -33,30 +51,39 @@ pre {
   border-bottom-right-radius: 5px 5px;
   border-top-left-radius: 5px 5px;
   border-top-right-radius: 5px 5px;
-  padding: 15px;
-  overflow-x: auto;
+  padding: 13px;
+  margin-bottom: 15px;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
-/* line 31, ../sass/screen.sass */
+/* line 46, ../sass/screen.sass */
 pre code {
   border: none;
 }
 
-/* line 34, ../sass/screen.sass */
-p code {
+/* Inline Code */
+/* line 50, ../sass/screen.sass */
+p code, ol code {
   background-color: #f8f8ff;
   color: #444444;
   padding: 0 0.2em;
   border: 1px solid #dedede;
 }
 
-/* line 40, ../sass/screen.sass */
+/* Posts */
+/* line 57, ../sass/screen.sass */
 .post {
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
-/* line 43, ../sass/screen.sass */
+/* Footer */
+/* line 61, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
   padding-bottom: 20px;
+  padding-top: 10px;
 }

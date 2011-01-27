@@ -35,7 +35,7 @@ Make sure this line `%sudo ALL=NOPASSWD: ALL` remains commented out. This line a
 
 Now try to SSH into the machine with the newly created user account and password.
 
-## System ##
+## System Locale and NTP ##
 
 We can now use sudo to run anything that is required as root. Let's update the VPS and set the default locale.
 
@@ -66,7 +66,7 @@ Let's also install ntp to keep the time accurate.
 
 An unsecure SSH daemon is probably the most common way a server gets rooted. Locking down the SSH server is very important when running an unmanaged VPS so it's strongly recommended that you do something similar. The following should be a good starting point to getting SSH secure on *any* VPS.
 
-### Disable root logins ###
+## Disable root logins ##
 
 This is an obvious one, and I think anyone who has any experience with administering a server would tell you to do this. There is no reason to login as root as almost any task that needs to be run as root can be done via `sudo`.
 
@@ -76,7 +76,7 @@ To disable root logins edit the `/etc/ssh/sshd_config` file and add:
 
 Reload the SSH daemon configuration by calling `sudo /etc/init.d/ssh reload`
 
-### Key Authentication ###
+## Key Authentication ##
 
 Key authentication is an alternative to the traditional username and password method of authentication. Rather than using a username and password, users can create a matched private and public key pair. The public key resides on the server and the private key is kept by the user. When ever an authentication request is made the user must present his/her private key to the server.
 
@@ -103,15 +103,13 @@ You should be able to login without any password requests. *Only* if this works 
 
 This will disable password logins and only allow key based authentication.
 
-### Changing Port ###
+## Changing Port ##
 
 This is an optional step but it's also a very easy way to stop the standard script kiddies from port scanning your server and detecting that SSH is enabled. By changing the default port of 22 to something uncommon the number of attacks that you'll see will most likeley drop significantly. Just change the line `Port 22` to something else:
     
     Port xxxx
 
-## Webmin and Virtualmin ##
-
-### Webmin ###
+## Webmin ##
 
 Webmin is a web based administrative tool for Linux/Unix based servers. It allows you to manage almost anything you could do from the command line from a nice web interface.
 
@@ -129,7 +127,7 @@ Then use dpkg to install:
 
 This will now allow you to go to `https://:10000`. You can login with the `root` account.
 
-### Virtualmin ###
+## Virtualmin ##
 
 Virtualmin is a tool to manage multiple virtual servers. It makes managing multiple websites on one server extremely easy.
 
@@ -137,7 +135,7 @@ First install ProFTPd.
 
     sudo apt-get install proftpd
 
-Then follow the instructions at `http://www.webmin.com/vdownload.html` to install virtualmin. You may want to edit the default Virtual Host template under Virtualmin -&gt; System Settings -&gt; Server Templates -&gt; Apache website (Dropdown)
+Then follow the instructions at `http://www.webmin.com/vdownload.html` to install virtualmin. You may want to edit the default Virtual Host template under Virtualmin > System Settings > Server Templates > Apache website (Dropdown)
 
 For example, I dislike the `www` in front of my domains so I added this to the template:
 

@@ -1,7 +1,8 @@
 ---
 layout: post
+title: Syntax Highlighting Test
 ---
-Just needed some code to customise the colours for CodeRay.
+Just testing syntax highlighting.
 
 {% highlight ruby %}
 class Person
