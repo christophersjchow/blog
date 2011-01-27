@@ -79,8 +79,14 @@ p code, ol code {
   padding-bottom: 25px;
 }
 
-/* Footer */
+/* Comments */
 /* line 61, ../sass/screen.sass */
+#disqus_thread {
+  padding-bottom: 25px;
+}
+
+/* Footer */
+/* line 64, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
