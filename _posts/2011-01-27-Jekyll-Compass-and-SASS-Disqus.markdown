@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll, Compass & SASS, Disqus
+title: Jekyll, Compass and SASS, Disqus
 ---
 
 ## Jekyll
