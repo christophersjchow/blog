@@ -22,11 +22,12 @@ I should mention that SASS actually has two syntax options for writing styles (t
 ## To Do
 
 I still have more to do though:
+
 <ul>
   <li>Create a custom 404 page.</li>
   <li>Add navigation of some sort.</li>
-  <li><strike>Date for the posts would be nice.</strike></li>
-  <li><strike>RSS feed.</strike></li>
+  <li class="strike">Date for the posts would be nice.</li>
+  <li class="strike">RSS feed.</li>
   <li>Come up with a name. (My name in Japanese doesn't cut it).</li>
   <li>Google Analytics maybe?</li>
 </ul>

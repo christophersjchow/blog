@@ -78,8 +78,13 @@ p code, ol code {
   padding-bottom: 25px;
 }
 
+/* line 62, ../sass/screen.sass */
+.strike {
+  text-decoration: line-through;
+}
+
 /* Dates */
-/* line 63, ../sass/screen.sass */
+/* line 66, ../sass/screen.sass */
 .date {
   margin: 0 0 20px 0;
   padding: 0;
@@ -87,27 +92,27 @@ p code, ol code {
 }
 
 /* Disqus Comments */
-/* line 69, ../sass/screen.sass */
+/* line 72, ../sass/screen.sass */
 #disqus_thread {
   padding-bottom: 25px;
 }
-/* line 71, ../sass/screen.sass */
+/* line 74, ../sass/screen.sass */
 #disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination {
   display: none !important;
 }
-/* line 73, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 #disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
   margin-top: 5px;
 }
 
 /* Header */
-/* line 77, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 #header {
   padding-bottom: 20px;
 }
 
 /* Footer */
-/* line 81, ../sass/screen.sass */
+/* line 84, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
