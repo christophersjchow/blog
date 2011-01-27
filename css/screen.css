@@ -28,20 +28,21 @@ h2 {
 /* line 20, ../sass/screen.sass */
 h3 {
   font-size: 15px;
+  margin: 0;
 }
 
-/* line 23, ../sass/screen.sass */
+/* line 24, ../sass/screen.sass */
 h2 + p {
   margin-top: 0.5em;
 }
 
 /* Code Blocks */
-/* line 27, ../sass/screen.sass */
+/* line 28, ../sass/screen.sass */
 pre, code {
   font: 14px "droid-sans-mono-1", "droid-sans-mono-2", monospace;
 }
 
-/* line 29, ../sass/screen.sass */
+/* line 30, ../sass/screen.sass */
 pre {
   width: 80%;
   margin: 0 auto;
@@ -59,13 +60,13 @@ pre {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
-/* line 46, ../sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 pre code {
   border: none;
 }
 
 /* Inline Code */
-/* line 50, ../sass/screen.sass */
+/* line 51, ../sass/screen.sass */
 p code, ol code {
   background-color: #f8f8ff;
   color: #444444;
@@ -74,19 +75,27 @@ p code, ol code {
 }
 
 /* Posts */
-/* line 57, ../sass/screen.sass */
+/* line 58, ../sass/screen.sass */
 .post {
   padding-bottom: 25px;
 }
 
-/* Comments */
-/* line 61, ../sass/screen.sass */
+/* Disqus Comments */
+/* line 62, ../sass/screen.sass */
 #disqus_thread {
   padding-bottom: 25px;
 }
+/* line 64, ../sass/screen.sass */
+#disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by {
+  display: none !important;
+}
+/* line 66, ../sass/screen.sass */
+#disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
+  margin-top: 5px;
+}
 
 /* Footer */
-/* line 64, ../sass/screen.sass */
+/* line 70, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
