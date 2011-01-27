@@ -1,28 +1,32 @@
 /* Main */
 a, a:hover, a:visited
   text-decoration: none
-  color: #4261df
+  color: #3063A5
 
 body
   font: 15px/150% "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif
-  width: 750px
-  margin: 70px auto 0 auto
+  width: 640px
+  margin: 50px auto 0 auto
 
-h1
-  font-size: 40px
-  color: #4261df
+  h1
+    font-size: 40px
 
-h2
-  font-size: 20px
-  margin: 0
-  padding: 15px 0 0 0
+.post
+  h1
+    font-size: 28px
+    margin-bottom: 8px
 
-h3
-  font-size: 15px
-  margin: 0
+  h2
+    font-size: 20px
+    margin: 0
+    padding: 15px 0 0 0
 
-h2 + p
-  margin-top: 0.5em
+  h3
+    font-size: 15px
+    margin: 0
+
+  h2 + p
+    margin-top: 0.5em
 
 /* Code Blocks */
 pre, code
@@ -55,6 +59,12 @@ p code, ol code
 .post
   padding-bottom: 25px
 
+/* Dates */
+.date
+  margin: 0 0 20px 0
+  padding: 0
+  font: italic 13px "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif
+
 /* Disqus Comments */
 #disqus_thread
   padding-bottom: 25px
@@ -62,6 +72,10 @@ p code, ol code
     display: none !important
   #dsq-content #dsq-comments .dsq-comment-footer
     margin-top: 5px
+
+/* Header */
+#header
+  padding-bottom: 20px
 
 /* Footer */
 #footer

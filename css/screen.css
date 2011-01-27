@@ -2,47 +2,48 @@
 /* line 2, ../sass/screen.sass */
 a, a:hover, a:visited {
   text-decoration: none;
-  color: #4261df;
+  color: #3063a5;
 }
 
 /* line 6, ../sass/screen.sass */
 body {
   font: 15px/150% "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif;
-  width: 750px;
-  margin: 70px auto 0 auto;
+  width: 640px;
+  margin: 50px auto 0 auto;
 }
-
 /* line 11, ../sass/screen.sass */
-h1 {
+body h1 {
   font-size: 40px;
-  color: #4261df;
 }
 
 /* line 15, ../sass/screen.sass */
-h2 {
+.post h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+/* line 19, ../sass/screen.sass */
+.post h2 {
   font-size: 20px;
   margin: 0;
   padding: 15px 0 0 0;
 }
-
-/* line 20, ../sass/screen.sass */
-h3 {
+/* line 24, ../sass/screen.sass */
+.post h3 {
   font-size: 15px;
   margin: 0;
 }
-
-/* line 24, ../sass/screen.sass */
-h2 + p {
+/* line 28, ../sass/screen.sass */
+.post h2 + p {
   margin-top: 0.5em;
 }
 
 /* Code Blocks */
-/* line 28, ../sass/screen.sass */
+/* line 32, ../sass/screen.sass */
 pre, code {
   font: 14px "droid-sans-mono-1", "droid-sans-mono-2", monospace;
 }
 
-/* line 30, ../sass/screen.sass */
+/* line 34, ../sass/screen.sass */
 pre {
   width: 80%;
   margin: 0 auto;
@@ -57,13 +58,13 @@ pre {
   overflow: auto;
   white-space: pre-wrap;
 }
-/* line 44, ../sass/screen.sass */
+/* line 48, ../sass/screen.sass */
 pre code {
   border: none;
 }
 
 /* Inline Code */
-/* line 48, ../sass/screen.sass */
+/* line 52, ../sass/screen.sass */
 p code, ol code {
   background-color: #f8f8ff;
   color: #444444;
@@ -72,27 +73,41 @@ p code, ol code {
 }
 
 /* Posts */
-/* line 55, ../sass/screen.sass */
+/* line 59, ../sass/screen.sass */
 .post {
   padding-bottom: 25px;
 }
 
+/* Dates */
+/* line 63, ../sass/screen.sass */
+.date {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font: italic 13px "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif;
+}
+
 /* Disqus Comments */
-/* line 59, ../sass/screen.sass */
+/* line 69, ../sass/screen.sass */
 #disqus_thread {
   padding-bottom: 25px;
 }
-/* line 61, ../sass/screen.sass */
+/* line 71, ../sass/screen.sass */
 #disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination {
   display: none !important;
 }
-/* line 63, ../sass/screen.sass */
+/* line 73, ../sass/screen.sass */
 #disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
   margin-top: 5px;
 }
 
+/* Header */
+/* line 77, ../sass/screen.sass */
+#header {
+  padding-bottom: 20px;
+}
+
 /* Footer */
-/* line 67, ../sass/screen.sass */
+/* line 81, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
