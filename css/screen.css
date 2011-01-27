@@ -86,7 +86,7 @@ p code, ol code {
   padding-bottom: 25px;
 }
 /* line 64, ../sass/screen.sass */
-#disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by {
+#disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination {
   display: none !important;
 }
 /* line 66, ../sass/screen.sass */
