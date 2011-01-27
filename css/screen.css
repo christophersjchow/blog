@@ -6,44 +6,49 @@ a, a:hover, a:visited {
 }
 
 /* line 6, ../sass/screen.sass */
+a img {
+  border: none;
+}
+
+/* line 9, ../sass/screen.sass */
 body {
   font: 15px/150% "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif;
   width: 640px;
   margin: 50px auto 0 auto;
 }
-/* line 11, ../sass/screen.sass */
+/* line 14, ../sass/screen.sass */
 body h1 {
   font-size: 40px;
 }
 
-/* line 15, ../sass/screen.sass */
+/* line 18, ../sass/screen.sass */
 .post h1 {
   font-size: 28px;
   margin-bottom: 8px;
 }
-/* line 19, ../sass/screen.sass */
+/* line 22, ../sass/screen.sass */
 .post h2 {
   font-size: 20px;
   margin: 0;
   padding: 15px 0 0 0;
 }
-/* line 24, ../sass/screen.sass */
+/* line 27, ../sass/screen.sass */
 .post h3 {
   font-size: 15px;
   margin: 0;
 }
-/* line 28, ../sass/screen.sass */
+/* line 31, ../sass/screen.sass */
 .post h2 + p {
   margin-top: 0.5em;
 }
 
 /* Code Blocks */
-/* line 32, ../sass/screen.sass */
+/* line 35, ../sass/screen.sass */
 pre, code {
   font: 14px "droid-sans-mono-1", "droid-sans-mono-2", monospace;
 }
 
-/* line 34, ../sass/screen.sass */
+/* line 37, ../sass/screen.sass */
 pre {
   width: 80%;
   margin: 0 auto;
@@ -58,13 +63,13 @@ pre {
   overflow: auto;
   white-space: pre-wrap;
 }
-/* line 48, ../sass/screen.sass */
+/* line 51, ../sass/screen.sass */
 pre code {
   border: none;
 }
 
 /* Inline Code */
-/* line 52, ../sass/screen.sass */
+/* line 55, ../sass/screen.sass */
 p code, ol code {
   background-color: #f8f8ff;
   color: #444444;
@@ -73,18 +78,18 @@ p code, ol code {
 }
 
 /* Posts */
-/* line 59, ../sass/screen.sass */
+/* line 62, ../sass/screen.sass */
 .post {
   padding-bottom: 25px;
 }
 
-/* line 62, ../sass/screen.sass */
+/* line 65, ../sass/screen.sass */
 .strike {
   text-decoration: line-through;
 }
 
 /* Dates */
-/* line 66, ../sass/screen.sass */
+/* line 69, ../sass/screen.sass */
 .date {
   margin: 0 0 20px 0;
   padding: 0;
@@ -92,27 +97,27 @@ p code, ol code {
 }
 
 /* Disqus Comments */
-/* line 72, ../sass/screen.sass */
+/* line 75, ../sass/screen.sass */
 #disqus_thread {
   padding-bottom: 25px;
 }
-/* line 74, ../sass/screen.sass */
+/* line 77, ../sass/screen.sass */
 #disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination {
   display: none !important;
 }
-/* line 76, ../sass/screen.sass */
+/* line 79, ../sass/screen.sass */
 #disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
   margin-top: 5px;
 }
 
 /* Header */
-/* line 80, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 #header {
   padding-bottom: 20px;
 }
 
 /* Footer */
-/* line 84, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
