@@ -102,22 +102,26 @@ p code, ol code {
   padding-bottom: 25px;
 }
 /* line 77, ../sass/screen.sass */
-#disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination {
+#disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination, #disqus_thread #dsq-comments-title {
   display: none !important;
 }
 /* line 79, ../sass/screen.sass */
 #disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
   margin-top: 5px;
 }
+/* line 81, ../sass/screen.sass */
+#disqus_thread h3 {
+  margin-bottom: 0;
+}
 
 /* Header */
-/* line 83, ../sass/screen.sass */
+/* line 85, ../sass/screen.sass */
 #header {
   padding-bottom: 20px;
 }
 
 /* Footer */
-/* line 87, ../sass/screen.sass */
+/* line 89, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
