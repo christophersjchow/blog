@@ -24,7 +24,7 @@ I should mention that SASS actually has two syntax options for writing styles (t
 I still have more to do though:
 
 <ul>
-  <li>Create a custom 404 page.</li>
+  <li class="strike">Create a custom 404 page.</li>
   <li>Add navigation of some sort.</li>
   <li class="strike">Date for the posts would be nice.</li>
   <li class="strike">RSS feed.</li>
