@@ -3,7 +3,7 @@ layout: post
 title: Simplifying my work environment with iTerm2 and zsh
 ---
 
-After watching [PeepCode's](www.peepcode.com) latest screencast called Play by Play (great cast btw), I really liked how Gary Bernhardt kept things simple by really only using one terminal window, taking full advantage of `^z` with `fg`. I decided to make a few changes to my prompt in an attempt to simplify coding setup, taking inspiration from Gary's setup. Up until now I had actually been using MacVim for most of my coding, using `⌘Tab` to switch between it and the Terminal. I also used lots of tabs in Terminal to separate tasks, though this often made it hard to find a particular session.
+After watching [PeepCode's](http://www.peepcode.com) latest screencast called Play by Play (great cast btw), I really liked how Gary Bernhardt kept things simple by really only using one terminal window, taking full advantage of `^z` with `fg`. I decided to make a few changes to my prompt in an attempt to simplify coding setup, taking inspiration from Gary's setup. Up until now I had actually been using MacVim for most of my coding, using `⌘Tab` to switch between it and the Terminal. I also used lots of tabs in Terminal to separate tasks, though this often made it hard to find a particular session.
 
 ## iTerm2
 
