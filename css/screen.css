@@ -11,44 +11,56 @@ a img {
 }
 
 /* line 9, ../sass/screen.sass */
+img {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 15, ../sass/screen.sass */
 body {
   font: 15px/150% "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif;
   width: 640px;
   margin: 50px auto 0 auto;
 }
-/* line 14, ../sass/screen.sass */
+/* line 20, ../sass/screen.sass */
 body h1 {
   font-size: 40px;
 }
 
-/* line 18, ../sass/screen.sass */
+/* line 24, ../sass/screen.sass */
 .post h1 {
   font-size: 28px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
-/* line 22, ../sass/screen.sass */
+/* line 27, ../sass/screen.sass */
+.post h1 a {
+  line-height: 33px;
+}
+/* line 30, ../sass/screen.sass */
 .post h2 {
   font-size: 20px;
   margin: 0;
   padding: 15px 0 0 0;
 }
-/* line 27, ../sass/screen.sass */
+/* line 35, ../sass/screen.sass */
 .post h3 {
   font-size: 15px;
   margin: 0;
 }
-/* line 31, ../sass/screen.sass */
+/* line 39, ../sass/screen.sass */
 .post h2 + p {
   margin-top: 0.5em;
 }
 
 /* Code Blocks */
-/* line 35, ../sass/screen.sass */
+/* line 43, ../sass/screen.sass */
 pre, code {
   font: 14px "droid-sans-mono-1", "droid-sans-mono-2", monospace;
 }
 
-/* line 37, ../sass/screen.sass */
+/* line 45, ../sass/screen.sass */
 pre {
   width: 80%;
   margin: 0 auto;
@@ -63,13 +75,13 @@ pre {
   overflow: auto;
   white-space: pre-wrap;
 }
-/* line 51, ../sass/screen.sass */
+/* line 59, ../sass/screen.sass */
 pre code {
   border: none;
 }
 
 /* Inline Code */
-/* line 55, ../sass/screen.sass */
+/* line 63, ../sass/screen.sass */
 p code, ol code {
   background-color: #f8f8ff;
   color: #444444;
@@ -78,18 +90,18 @@ p code, ol code {
 }
 
 /* Posts */
-/* line 62, ../sass/screen.sass */
+/* line 70, ../sass/screen.sass */
 .post {
   padding-bottom: 25px;
 }
 
-/* line 65, ../sass/screen.sass */
+/* line 73, ../sass/screen.sass */
 .strike {
   text-decoration: line-through;
 }
 
 /* Dates */
-/* line 69, ../sass/screen.sass */
+/* line 77, ../sass/screen.sass */
 .date {
   margin: 0 0 20px 0;
   padding: 0;
@@ -97,31 +109,31 @@ p code, ol code {
 }
 
 /* Disqus Comments */
-/* line 75, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 #disqus_thread {
   padding-bottom: 25px;
 }
-/* line 77, ../sass/screen.sass */
+/* line 85, ../sass/screen.sass */
 #disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination, #disqus_thread #dsq-comments-title {
   display: none !important;
 }
-/* line 79, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 #disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
   margin-top: 5px;
 }
-/* line 81, ../sass/screen.sass */
+/* line 89, ../sass/screen.sass */
 #disqus_thread h3 {
   margin-bottom: 0;
 }
 
 /* Header */
-/* line 85, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 #header {
   padding-bottom: 20px;
 }
 
 /* Footer */
-/* line 89, ../sass/screen.sass */
+/* line 97, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
@@ -129,7 +141,7 @@ p code, ol code {
   padding-top: 10px;
 }
 
-/* line 95, ../sass/screen.sass */
+/* line 103, ../sass/screen.sass */
 #error {
   width: 80%;
   margin: 0 auto;
