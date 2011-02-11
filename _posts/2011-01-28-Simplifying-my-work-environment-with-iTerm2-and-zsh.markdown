@@ -13,11 +13,11 @@ The first thing I did was drop Terminal. [iTerm2](http://code.google.com/p/iterm
 
 I was already using zsh for my shell, in addition to using the great scripts provided by [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). I have made my changes to get my prompt looking like the following so feel free to use my [fork](https://github.com/Soliah/oh-my-zsh). My theme slightly extends the default git information shown on the prompt, taking inspiration from Gary's time indicator. 
 
-The `*` indicates dirty and `?` indicates untracked changes. <img src="/images/posts/2011-01-28-001.png" />
+The `*` indicates dirty and `?` indicates untracked changes.
 
-As time goes by the colour of the time changes from green to yellow to red. <img src="/images/posts/2011-01-28-003.png" /> <img src="/images/posts/2011-01-28-004.png" />
+<img src="/images/posts/2011-01-28-001.png" />
 
-I got rid of the fatal error and changed the time since last commit to include days and hours instead of just minutes. I've also made the color neutral when the working directory is clean. <img src="/images/posts/2011-01-28-002.png" />
+As time goes by the colour of the time changes from green to yellow to red. I got rid of the fatal error and changed the time since last commit to include days and hours instead of just minutes. I've also made the color neutral when the working directory is clean.
 
 All of this is available at my [fork](https://github.com/Soliah/oh-my-zsh).
 

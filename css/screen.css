@@ -95,14 +95,19 @@ p code, ol code {
 .post {
   padding-bottom: 25px;
 }
-
 /* line 74, ../sass/screen.sass */
+.post img {
+  text-align: center;
+  display: block;
+}
+
+/* line 78, ../sass/screen.sass */
 .strike {
   text-decoration: line-through;
 }
 
 /* Dates */
-/* line 78, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 .date {
   margin: 0 0 20px 0;
   padding: 0;
@@ -110,31 +115,31 @@ p code, ol code {
 }
 
 /* Disqus Comments */
-/* line 84, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 #disqus_thread {
   padding-bottom: 25px;
 }
-/* line 86, ../sass/screen.sass */
+/* line 90, ../sass/screen.sass */
 #disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination, #disqus_thread #dsq-comments-title {
   display: none !important;
 }
-/* line 88, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 #disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
   margin-top: 5px;
 }
-/* line 90, ../sass/screen.sass */
+/* line 94, ../sass/screen.sass */
 #disqus_thread h3 {
   margin-bottom: 0;
 }
 
 /* Header */
-/* line 94, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 #header {
   padding-bottom: 20px;
 }
 
 /* Footer */
-/* line 98, ../sass/screen.sass */
+/* line 102, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
@@ -142,7 +147,7 @@ p code, ol code {
   padding-top: 10px;
 }
 
-/* line 104, ../sass/screen.sass */
+/* line 108, ../sass/screen.sass */
 #error {
   width: 80%;
   margin: 0 auto;
