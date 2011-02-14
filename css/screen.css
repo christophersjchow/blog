@@ -29,39 +29,64 @@ body h1 {
   font-size: 40px;
 }
 
+/* Posts */
 /* line 24, ../sass/screen.sass */
+.post {
+  padding-bottom: 25px;
+}
+/* line 27, ../sass/screen.sass */
+.post img {
+  text-align: center;
+  display: block;
+}
+/* line 31, ../sass/screen.sass */
 .post h1 {
   font-size: 28px;
   margin-bottom: 7px;
   line-height: 33px;
 }
-/* line 28, ../sass/screen.sass */
+/* line 35, ../sass/screen.sass */
 .post h1 a {
   line-height: 33px;
 }
-/* line 31, ../sass/screen.sass */
+/* line 38, ../sass/screen.sass */
 .post h2 {
   font-size: 20px;
   margin: 0;
   padding: 15px 0 0 0;
 }
-/* line 36, ../sass/screen.sass */
+/* line 43, ../sass/screen.sass */
 .post h3 {
   font-size: 15px;
   margin: 0;
 }
-/* line 40, ../sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 .post h2 + p {
   margin-top: 0.5em;
 }
 
+/* line 51, ../sass/screen.sass */
+.archive h1 {
+  font-size: 28px;
+  margin-bottom: 7px;
+  line-height: 33px;
+}
+/* line 55, ../sass/screen.sass */
+.archive ul {
+  padding: 0;
+}
+/* line 58, ../sass/screen.sass */
+.archive ul li {
+  list-style: none;
+}
+
 /* Code Blocks */
-/* line 44, ../sass/screen.sass */
+/* line 62, ../sass/screen.sass */
 pre, code {
   font: 14px "droid-sans-mono-1", "droid-sans-mono-2", monospace;
 }
 
-/* line 46, ../sass/screen.sass */
+/* line 64, ../sass/screen.sass */
 pre {
   width: 80%;
   margin: 0 auto;
@@ -76,13 +101,13 @@ pre {
   overflow: auto;
   white-space: pre-wrap;
 }
-/* line 60, ../sass/screen.sass */
+/* line 78, ../sass/screen.sass */
 pre code {
   border: none;
 }
 
 /* Inline Code */
-/* line 64, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 p code, ol code {
   background-color: #f8f8ff;
   color: #444444;
@@ -90,24 +115,13 @@ p code, ol code {
   border: 1px solid #dedede;
 }
 
-/* Posts */
-/* line 71, ../sass/screen.sass */
-.post {
-  padding-bottom: 25px;
-}
-/* line 74, ../sass/screen.sass */
-.post img {
-  text-align: center;
-  display: block;
-}
-
-/* line 78, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 .strike {
   text-decoration: line-through;
 }
 
 /* Dates */
-/* line 82, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 .date {
   margin: 0 0 20px 0;
   padding: 0;
@@ -115,31 +129,41 @@ p code, ol code {
 }
 
 /* Disqus Comments */
-/* line 88, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 #disqus_thread {
+  clear: right;
+  margin-top: 55px;
   padding-bottom: 25px;
 }
-/* line 90, ../sass/screen.sass */
-#disqus_thread .dsq-item-cp, #disqus_thread .dsq-comment-options, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination, #disqus_thread #dsq-comments-title {
+/* line 102, ../sass/screen.sass */
+#disqus_thread .dsq-item-cp, #disqus_thread .dsq-options, #disqus_thread .dsq-comment-options, #disqus_thread .dsq-authenticate-copy, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination, #disqus_thread #dsq-comments-title {
   display: none !important;
 }
-/* line 92, ../sass/screen.sass */
+/* line 104, ../sass/screen.sass */
 #disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
   margin-top: 5px;
 }
-/* line 94, ../sass/screen.sass */
+/* line 106, ../sass/screen.sass */
 #disqus_thread h3 {
   margin-bottom: 0;
 }
 
 /* Header */
-/* line 98, ../sass/screen.sass */
+/* line 110, ../sass/screen.sass */
 #header {
   padding-bottom: 20px;
 }
+/* line 113, ../sass/screen.sass */
+#header p {
+  margin: 0;
+  padding: 0;
+  margin-top: -15px;
+  font-size: 12px;
+  font-style: italic;
+}
 
 /* Footer */
-/* line 102, ../sass/screen.sass */
+/* line 121, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
@@ -147,7 +171,22 @@ p code, ol code {
   padding-top: 10px;
 }
 
-/* line 108, ../sass/screen.sass */
+/* Pagination */
+/* line 129, ../sass/screen.sass */
+#pagination {
+  height: 35px;
+  border-bottom: 1px solid #d9d9d9;
+}
+/* line 133, ../sass/screen.sass */
+#pagination .left {
+  float: left;
+}
+/* line 136, ../sass/screen.sass */
+#pagination .right {
+  float: right;
+}
+
+/* line 139, ../sass/screen.sass */
 #error {
   width: 80%;
   margin: 0 auto;
