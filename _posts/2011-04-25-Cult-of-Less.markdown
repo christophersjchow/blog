@@ -27,6 +27,11 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>$80</td>
     </tr>
     <tr>
+        <td>2x ReadyNAS NV+</td>
+        <td>Give</td>
+        <td>$0</td>
+    </tr>
+    <tr>
         <td>Asrock 330HT</td>
         <td>Sell</td>
         <td>$300</td>
@@ -115,7 +120,7 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>PS3 Games</td>
         <td>Sell</td>
         <td>$20</td>
-    </tr>a
+    </tr>
     <tr>
         <td>PS3 Games Rack</td>
         <td>Give</td>
@@ -140,7 +145,17 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>Fujiyama Homme Cologne</td>
         <td>Give</td>
         <td>$0</td>
-    </tr> 
+    </tr>
+    <tr>
+        <td>2x Galant Tables</td>
+        <td>Keep?</td>
+        <td>$0</td>
+    </tr>
+    <tr>
+        <td>Mesh Chair</td>
+        <td>Keep</td>
+        <td>$200</td>
+    </tr>
 </table>
 
 So I still have to add prices and there are a lot more things I need to add to the list as well.
