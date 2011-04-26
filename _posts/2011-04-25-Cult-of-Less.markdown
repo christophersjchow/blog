@@ -13,12 +13,12 @@ So I've made the decision to completly reduce the clutter in my life and embrace
     </tr>
     <tr>
         <td>Samsung 32" LCD TV</td>
-        <td>Keep</td>
+        <td>Sell</td>
         <td></td>
     </tr>
     <tr>
         <td>Playstation 3</td>
-        <td>Keep</td>
+        <td>Sell</td>
         <td></td>
     </tr>
     <tr>
@@ -111,6 +111,36 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>Keep</td>
         <td></td>
     </tr>
+    <tr>
+        <td>PS3 Games</td>
+        <td>Sell</td>
+        <td></td>
+    </tr>a
+    <tr>
+        <td>PS3 Games Rack</td>
+        <td>Give</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CK Messenger Bag</td>
+        <td>Keep</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Laptop Bag</td>
+        <td>Give</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CK Cologne</td>
+        <td>Give</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fujiyama Homme Cologne</td>
+        <td>Give</td>
+        <td></td>
+    </tr> 
 </table>
 
 So I still have to add prices and there are a lot more things I need to add to the list as well.
