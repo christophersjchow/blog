@@ -11,12 +11,12 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td width="20%">Action</td>
         <td width="20%">Price</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>Samsung 32" LCD TV</td>
         <td>Sell</td>
         <td>$600</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>Playstation 3</td>
         <td>Sell</td>
         <td>$200</td>
@@ -51,7 +51,7 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>Sell</td>
         <td>$90</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>APC 700VA UPS</td>
         <td>Sell</td>
         <td>$80</td>
@@ -121,7 +121,7 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>Sell</td>
         <td>$20</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>PS3 Games Rack</td>
         <td>Give</td>
         <td>$0</td>
@@ -136,12 +136,12 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>Give</td>
         <td>$0</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>CK Cologne</td>
         <td>Give</td>
         <td>$0</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>Fujiyama Homme Cologne</td>
         <td>Give</td>
         <td>$0</td>
