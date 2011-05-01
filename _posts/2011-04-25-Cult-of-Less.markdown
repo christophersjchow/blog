@@ -26,12 +26,12 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>Sell</td>
         <td>$80</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>2x ReadyNAS NV+</td>
         <td>Give</td>
         <td>$0</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>Asrock 330HT</td>
         <td>Sell</td>
         <td>$300</td>
@@ -41,12 +41,12 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>Keep</td>
         <td>$700</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>Logitech Z-2300s Speakers</td>
         <td>Keep</td>
         <td>$80</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>HP Procurve 1810G Switch</td>
         <td>Sell</td>
         <td>$90</td>
@@ -68,18 +68,13 @@ So I've made the decision to completly reduce the clutter in my life and embrace
     </tr>
     <tr>
         <td>Audio Technica A700 Headphones</td>
-        <td>Sell</td>
+        <td>Keep</td>
         <td>$70</td>
     </tr>
-    <tr>
-        <td>Logitech MX610 Mouse</td>
+    <tr class="fade">
+        <td>Logitech MX620 Mouse</td>
         <td>Sell</td>
         <td>$10</td>
-    </tr>
-    <tr>
-        <td>Kinesis Freestyle Keyboard</td>
-        <td>Sell</td>
-        <td>$50</td>
     </tr>
     <tr>
         <td>iPhone 4</td>
@@ -90,6 +85,11 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>Citizen Eco Drive Watch</td>
         <td>Keep</td>
         <td>$150</td>
+    </tr>
+    <tr class="fade">
+        <td>Kinesis Freestyle Keyboard</td>
+        <td>Sell</td>
+        <td>$50</td>
     </tr>
     <tr>
         <td>iPhone Ultimate Ears 200vi</td>
@@ -102,11 +102,6 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>$100</td>
     </tr>
     <tr>
-        <td>Draytek 2820n Modem</td>
-        <td>Keep</td>
-        <td>$300</td>
-    </tr>
-    <tr>
         <td>Snooker Cue</td>
         <td>Keep</td>
         <td>$100</td>
@@ -116,10 +111,15 @@ So I've made the decision to completly reduce the clutter in my life and embrace
         <td>Keep</td>
         <td>$900</td>
     </tr>
-    <tr>
+    <tr class="fade">
         <td>PS3 Games</td>
         <td>Sell</td>
         <td>$20</td>
+    </tr>
+    <tr>
+        <td>Draytek 2820n Modem</td>
+        <td>Keep</td>
+        <td>$300</td>
     </tr>
     <tr class="fade">
         <td>PS3 Games Rack</td>
@@ -148,7 +148,7 @@ So I've made the decision to completly reduce the clutter in my life and embrace
     </tr>
     <tr>
         <td>2x Galant Tables</td>
-        <td>Keep?</td>
+        <td>Keep</td>
         <td>$0</td>
     </tr>
     <tr>
