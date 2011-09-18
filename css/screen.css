@@ -283,6 +283,7 @@ p code, ol code {
 
 /* line 212, ../sass/screen.sass */
 #error {
+  clear: both;
   width: 80%;
   margin: 0 auto;
   background-color: #f0f0f0;
@@ -296,12 +297,12 @@ p code, ol code {
   text-align: center;
 }
 
-/* line 225, ../sass/screen.sass */
+/* line 226, ../sass/screen.sass */
 .weak {
   color: #b9d3ee;
 }
 
-/* line 228, ../sass/screen.sass */
+/* line 229, ../sass/screen.sass */
 .ok {
   color: #7093db;
 }
