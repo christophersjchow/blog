@@ -20,7 +20,7 @@ Under `<system.web>/<compilation>/<assemblies>` add:
 <add assembly="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
 {% endhighlight %}
 
-Obviously add the corresponding DLL references to the project.
+Some of these may already been in there. Obviously add the corresponding DLL references to the project.
 
 Under `<system.web>/<httpModules>` add: 
 
@@ -31,12 +31,10 @@ Under `<system.web>/<httpModules>` add:
 Under `<system.web>/<modules>` add:
 
 {% highlight xml %}
-<modules runAllManagedModulesForAllRequests="true">
-    <remove name="ScriptModule" />
-    <remove name="UrlRoutingModule" />
-    <add name="ScriptModule" preCondition="managedHandler" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
-    <add name="UrlRoutingModule" type="System.Web.Routing.UrlRoutingModule, System.Web.Routing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
-</modules>
+<remove name="ScriptModule" />
+<remove name="UrlRoutingModule" />
+<add name="ScriptModule" preCondition="managedHandler" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+<add name="UrlRoutingModule" type="System.Web.Routing.UrlRoutingModule, System.Web.Routing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
 {% endhighlight %}
 
 Under `<system.web>/<pages>/<namespaces>` add:
@@ -58,13 +56,10 @@ public static void RegisterRoutes(RouteCollection routes) {
     routes.IgnoreRoute("{resource}.aspx/{*pathInfo}");
 
     routes.MapRoute(
-            // Route name
-            "Default",
-            // URL with parameters
-            "{controller}/{action}/{id}",
-            // Parameter defaults
-            new { controller = "Home", action = "Index", id = "" }
-            );
+        "Home",
+        "Home/Index",
+        new { controller = "Home", action = "Index", id = "" }
+    );
 }
 
 protected void Application_Start(object sender, EventArgs e) {
@@ -79,19 +74,21 @@ Create the following folders in the project:
     Views/Shared/
     Views/Home/
 
-Add a `web.config` file to the `Views/` folder with the following inside https://gist.github.com/1215688
+Add a `web.config` file to the `Views/` folder with the following inside <https://gist.github.com/1215688>. This stops requests directly to `/Views/Home/Action.aspx` from being served.
 
 Lastly, close the project and open the `csproj` project file in a text editor and edit the key `<ProjectTypeGuids>`:
 
 {% highlight xml %}
-    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+<ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
 {% endhighlight %}
 
 This will make Visual Studio detect the project as an MVC application, adding the `Add View`, `Add Controller` etc to the context menus of the Solution Explorer.
 
+If you now create a `Home` controller with corresponding view, `http://localhost/Home/Index` should load. And if you go to a regular WebForms page they should continue to work too.
+
 The following links helped me put this together:
 
-1. http://www.britishdeveloper.co.uk/2010/05/add-mvc2-project-webforms-application.html
-2. http://www.hanselman.com/blog/PlugInHybridsASPNETWebFormsAndASPMVCAndASPNETDynamicDataSideBySide.aspx
-3. http://stackoverflow.com/questions/571315/how-would-you-sprinkle-in-asp-net-mvc-into-an-existing-web-site-project
-4. http://stackoverflow.com/questions/1904524/asp-net-mvc-and-webforms-co-existing
+1. <http://www.britishdeveloper.co.uk/2010/05/add-mvc2-project-webforms-application.html>
+2. <http://www.hanselman.com/blog/PlugInHybridsASPNETWebFormsAndASPMVCAndASPNETDynamicDataSideBySide.aspx>
+3. <http://stackoverflow.com/questions/571315/how-would-you-sprinkle-in-asp-net-mvc-into-an-existing-web-site-project>
+4. <http://stackoverflow.com/questions/1904524/asp-net-mvc-and-webforms-co-existing>

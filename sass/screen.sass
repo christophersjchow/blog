@@ -33,9 +33,15 @@ tr.heading
 
 .fade
   color: #e5e5e5
+
 /* Posts */
 .post
   padding-bottom: 25px
+  white-space: pre-wrap;      /* CSS3 */   
+  white-space: -moz-pre-wrap; /* Firefox */    
+  white-space: -pre-wrap;     /* Opera <7 */   
+  white-space: -o-pre-wrap;   /* Opera 7 */    
+  word-wrap: break-word;      /* IE */
 
   img
     text-align: center
@@ -86,7 +92,6 @@ pre
   padding: 13px
   margin-bottom: 15px
   overflow: auto
-  white-space: pre-wrap
 
   code
     border: none
