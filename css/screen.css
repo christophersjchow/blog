@@ -55,65 +55,60 @@ tr.heading {
 /* line 38, ../sass/screen.sass */
 .post {
   padding-bottom: 25px;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
 }
-/* line 46, ../sass/screen.sass */
+/* line 41, ../sass/screen.sass */
 .post img {
   text-align: center;
   display: block;
 }
-/* line 50, ../sass/screen.sass */
+/* line 45, ../sass/screen.sass */
 .post h1 {
   font-size: 28px;
   margin-bottom: 7px;
   line-height: 33px;
 }
-/* line 54, ../sass/screen.sass */
+/* line 49, ../sass/screen.sass */
 .post h1 a {
   line-height: 33px;
 }
-/* line 57, ../sass/screen.sass */
+/* line 52, ../sass/screen.sass */
 .post h2 {
   font-size: 20px;
   margin: 0;
   padding: 15px 0 0 0;
 }
-/* line 62, ../sass/screen.sass */
+/* line 57, ../sass/screen.sass */
 .post h3 {
   font-size: 15px;
   margin: 0;
 }
-/* line 66, ../sass/screen.sass */
+/* line 61, ../sass/screen.sass */
 .post h2 + p {
   margin-top: 0.5em;
 }
 
-/* line 70, ../sass/screen.sass */
+/* line 65, ../sass/screen.sass */
 .archive h1 {
   font-size: 28px;
   margin-bottom: 7px;
   line-height: 33px;
 }
-/* line 74, ../sass/screen.sass */
+/* line 69, ../sass/screen.sass */
 .archive ul {
   padding: 0;
 }
-/* line 77, ../sass/screen.sass */
+/* line 72, ../sass/screen.sass */
 .archive ul li {
   list-style: none;
 }
 
 /* Code Blocks */
-/* line 81, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 pre, code {
   font: 14px "droid-sans-mono-1", "droid-sans-mono-2", monospace;
 }
 
-/* line 83, ../sass/screen.sass */
+/* line 78, ../sass/screen.sass */
 pre {
   width: 80%;
   margin: 0 auto;
@@ -127,13 +122,13 @@ pre {
   margin-bottom: 15px;
   overflow: auto;
 }
-/* line 96, ../sass/screen.sass */
+/* line 91, ../sass/screen.sass */
 pre code {
   border: none;
 }
 
 /* Inline Code */
-/* line 100, ../sass/screen.sass */
+/* line 95, ../sass/screen.sass */
 p code, ol code {
   background-color: #f8f8ff;
   color: #444444;
@@ -141,13 +136,13 @@ p code, ol code {
   border: 1px solid #dedede;
 }
 
-/* line 106, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 .strike {
   text-decoration: line-through;
 }
 
 /* Dates */
-/* line 110, ../sass/screen.sass */
+/* line 105, ../sass/screen.sass */
 .date {
   margin: 0 0 20px 0;
   padding: 0;
@@ -155,31 +150,31 @@ p code, ol code {
 }
 
 /* Disqus Comments */
-/* line 116, ../sass/screen.sass */
+/* line 111, ../sass/screen.sass */
 #disqus_thread {
   clear: right;
   margin-top: 55px;
   padding-bottom: 25px;
 }
-/* line 120, ../sass/screen.sass */
+/* line 115, ../sass/screen.sass */
 #disqus_thread .dsq-item-cp, #disqus_thread .dsq-options, #disqus_thread .dsq-comment-options, #disqus_thread .dsq-authenticate-copy, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination, #disqus_thread #dsq-comments-title {
   display: none !important;
 }
-/* line 122, ../sass/screen.sass */
+/* line 117, ../sass/screen.sass */
 #disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
   margin-top: 5px;
 }
-/* line 124, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 #disqus_thread h3 {
   margin-bottom: 0;
 }
 
 /* Header */
-/* line 128, ../sass/screen.sass */
+/* line 123, ../sass/screen.sass */
 #header {
   padding-bottom: 20px;
 }
-/* line 131, ../sass/screen.sass */
+/* line 126, ../sass/screen.sass */
 #header p {
   margin: 0;
   padding: 0;
@@ -189,7 +184,7 @@ p code, ol code {
 }
 
 /* Footer */
-/* line 139, ../sass/screen.sass */
+/* line 134, ../sass/screen.sass */
 #footer {
   text-align: center;
   font-size: 12px;
@@ -198,21 +193,21 @@ p code, ol code {
 }
 
 /* Pagination */
-/* line 147, ../sass/screen.sass */
+/* line 142, ../sass/screen.sass */
 #pagination {
   height: 35px;
   border-bottom: 1px solid #d9d9d9;
 }
-/* line 151, ../sass/screen.sass */
+/* line 146, ../sass/screen.sass */
 #pagination .left {
   float: left;
 }
-/* line 154, ../sass/screen.sass */
+/* line 149, ../sass/screen.sass */
 #pagination .right {
   float: right;
 }
 
-/* line 157, ../sass/screen.sass */
+/* line 152, ../sass/screen.sass */
 #error {
   width: 80%;
   margin: 0 auto;
