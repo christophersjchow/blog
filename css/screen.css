@@ -95,9 +95,9 @@ tr.heading {
 }
 /* line 70, ../sass/screen.sass */
 .post #skills {
+  padding: 1em 0 1em 0;
   width: 100%;
   overflow: auto;
-  padding-bottom: 1em;
 }
 /* line 75, ../sass/screen.sass */
 .post #skills ul.talent {
