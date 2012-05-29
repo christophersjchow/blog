@@ -1,172 +1,138 @@
-/* Main */
-/* line 2, ../sass/screen.sass */
+/* line 1, ../sass/screen.sass */
 a, a:hover, a:visited {
   text-decoration: none;
   color: #3063a5;
 }
 
-/* line 6, ../sass/screen.sass */
+/* line 5, ../sass/screen.sass */
 a img {
   border: none;
 }
 
-/* line 9, ../sass/screen.sass */
-img {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  margin: 0 auto;
-}
-
-/* line 15, ../sass/screen.sass */
+/* line 8, ../sass/screen.sass */
 body {
+  margin-top: 50px;
   font: 15px/150% "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif;
-  width: 720px;
-  margin: 50px auto 0 auto;
 }
-/* line 20, ../sass/screen.sass */
-body h1 {
-  font-size: 40px;
+/* line 12, ../sass/screen.sass */
+body p {
+  font: 15px/150% "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif;
 }
-
+/* line 15, ../sass/screen.sass */
+body div.container {
+  /* Code Blocks */
+  /* Inline Code */
+  /* Dates */
+  /* Disqus Comments */
+}
+/* line 16, ../sass/screen.sass */
+body div.container div#pagination {
+  height: 35px;
+}
+/* line 19, ../sass/screen.sass */
+body div.container div#pagination .right {
+  text-align: right;
+  float: right;
+}
 /* line 23, ../sass/screen.sass */
-table {
-  margin-left: auto;
-  margin-right: auto;
+body div.container div#header {
+  padding-bottom: 20px;
 }
-
-/* line 27, ../sass/screen.sass */
-td {
+/* line 26, ../sass/screen.sass */
+body div.container div#header div#contact {
+  text-align: right;
+  padding-top: 5px;
+}
+/* line 30, ../sass/screen.sass */
+body div.container div#header div#contact p {
   margin: 0;
-  padding: 0;
 }
-
-/* line 31, ../sass/screen.sass */
-tr.heading {
-  font-weight: bold;
+/* line 33, ../sass/screen.sass */
+body div.container div#header div#contact div#email {
+  margin-top: -5px;
 }
-
-/* line 34, ../sass/screen.sass */
-.fade {
-  color: #e5e5e5;
-}
-
-/* Posts */
-/* line 38, ../sass/screen.sass */
-.post {
+/* line 36, ../sass/screen.sass */
+body div.container div.post {
   padding-bottom: 25px;
-  clear: both;
-  /* CV */
 }
-/* line 42, ../sass/screen.sass */
-.post img {
+/* line 39, ../sass/screen.sass */
+body div.container div.post img {
   text-align: center;
   display: block;
 }
-/* line 46, ../sass/screen.sass */
-.post h1 {
+/* line 43, ../sass/screen.sass */
+body div.container div.post h1 {
   font-size: 28px;
-  margin-bottom: 7px;
+  margin: 18px 0 7px 0;
+}
+/* line 46, ../sass/screen.sass */
+body div.container div.post h1 a {
   line-height: 33px;
 }
-/* line 50, ../sass/screen.sass */
-.post h1 a {
-  line-height: 33px;
+/* line 49, ../sass/screen.sass */
+body div.container div.post section {
+  padding-bottom: 15px;
 }
-/* line 53, ../sass/screen.sass */
-.post h2 {
-  font-size: 20px;
-  margin: 0;
-  padding: 15px 0 0 0;
-  clear: both;
+/* line 52, ../sass/screen.sass */
+body div.container div.post section div.experience {
+  margin-bottom: 20px;
+}
+/* line 55, ../sass/screen.sass */
+body div.container div.post section div.experience li {
+  line-height: 22px;
 }
 /* line 59, ../sass/screen.sass */
-.post h3 {
-  font-size: 15px;
-  margin: 0;
+body div.container div.post section div.experience div.company em a {
+  font-size: 15.5px;
 }
-/* line 63, ../sass/screen.sass */
-.post h2 + p {
-  margin-top: 0.5em;
-}
-/* line 66, ../sass/screen.sass */
-.post ol {
-  word-wrap: break-word;
-}
-/* line 70, ../sass/screen.sass */
-.post #skills {
-  padding: 1em 0 1em 0;
-  width: 100%;
-  overflow: auto;
-}
-/* line 75, ../sass/screen.sass */
-.post #skills ul.talent {
-  margin: 0;
-  padding: 0;
-  width: 20%;
-  float: left;
-  list-style: none;
-}
-/* line 82, ../sass/screen.sass */
-.post #skills ul.talent li {
-  line-height: 25px;
-}
-/* line 85, ../sass/screen.sass */
-.post #experience {
-  width: 100%;
-  overflow: auto;
-  padding: 1em 0;
-}
-/* line 90, ../sass/screen.sass */
-.post #experience .company {
-  float: left;
-}
-/* line 93, ../sass/screen.sass */
-.post #experience .company em {
+/* line 61, ../sass/screen.sass */
+body div.container div.post section div.experience div.company p.position {
   font-weight: bold;
 }
-/* line 96, ../sass/screen.sass */
-.post #experience .company p.position {
-  padding: 0;
+/* line 65, ../sass/screen.sass */
+body div.container div.post section div#skills ul {
+  list-style: none;
   margin: 0;
 }
-/* line 100, ../sass/screen.sass */
-.post #experience .period {
-  float: right;
+/* line 69, ../sass/screen.sass */
+body div.container div.post section h2 {
+  font-size: 25px;
+  margin-bottom: 7px;
+  line-height: 33px;
 }
-/* line 103, ../sass/screen.sass */
-.post #experience .description {
+/* line 74, ../sass/screen.sass */
+body div.container div.post section h2 + p {
+  margin-top: 0.5em;
+}
+/* line 77, ../sass/screen.sass */
+body div.container div.post section h2 + div.experience {
+  margin-top: 12px;
+}
+/* line 80, ../sass/screen.sass */
+body div.container div.archive {
   clear: both;
-  padding: 0.25em 0;
 }
-
-/* line 108, ../sass/screen.sass */
-.archive {
-  clear: both;
-}
-/* line 111, ../sass/screen.sass */
-.archive h1 {
+/* line 83, ../sass/screen.sass */
+body div.container div.archive h1 {
   font-size: 28px;
   margin-bottom: 7px;
   line-height: 33px;
 }
-/* line 115, ../sass/screen.sass */
-.archive ul {
+/* line 87, ../sass/screen.sass */
+body div.container div.archive ul {
+  margin: 0;
   padding: 0;
 }
-/* line 118, ../sass/screen.sass */
-.archive ul li {
+/* line 91, ../sass/screen.sass */
+body div.container div.archive ul li {
   list-style: none;
 }
-
-/* Code Blocks */
-/* line 122, ../sass/screen.sass */
-pre, code {
+/* line 95, ../sass/screen.sass */
+body div.container pre, body div.container code {
   font: 14px "droid-sans-mono-1", "droid-sans-mono-2", monospace;
 }
-
-/* line 124, ../sass/screen.sass */
-pre {
+/* line 97, ../sass/screen.sass */
+body div.container pre {
   width: 80%;
   margin: 0 auto;
   background-color: #f0f0f0;
@@ -179,110 +145,56 @@ pre {
   margin-bottom: 15px;
   overflow: auto;
 }
-/* line 137, ../sass/screen.sass */
-pre code {
+/* line 110, ../sass/screen.sass */
+body div.container pre code {
   border: none;
 }
-
-/* Inline Code */
-/* line 141, ../sass/screen.sass */
-p code, ol code {
+/* line 114, ../sass/screen.sass */
+body div.container p code, body div.container ol code {
   background-color: #f8f8ff;
   color: #444444;
   padding: 0 0.2em;
   border: 1px solid #dedede;
 }
-
-/* line 147, ../sass/screen.sass */
-.strike {
+/* line 120, ../sass/screen.sass */
+body div.container .strike {
   text-decoration: line-through;
 }
-
-/* Dates */
-/* line 151, ../sass/screen.sass */
-.date {
+/* line 124, ../sass/screen.sass */
+body div.container .date {
   margin: 0 0 20px 0;
   padding: 0;
   font: italic 13px "droid-sans-1", "droid-sans-2", "Helvetica", sans-serif;
 }
-
-/* Disqus Comments */
-/* line 157, ../sass/screen.sass */
-#disqus_thread {
+/* line 130, ../sass/screen.sass */
+body div.container #disqus_thread {
   clear: right;
   margin-top: 55px;
   padding-bottom: 25px;
 }
-/* line 161, ../sass/screen.sass */
-#disqus_thread .dsq-item-cp, #disqus_thread .dsq-options, #disqus_thread .dsq-comment-options, #disqus_thread .dsq-authenticate-copy, #disqus_thread li[id^=dsq-more-], #disqus_thread .dsq-by, #disqus_thread .dsq-pagination, #disqus_thread #dsq-comments-title {
+/* line 134, ../sass/screen.sass */
+body div.container #disqus_thread .dsq-item-cp, body div.container #disqus_thread .dsq-options, body div.container #disqus_thread .dsq-comment-options, body div.container #disqus_thread .dsq-authenticate-copy, body div.container #disqus_thread li[id^=dsq-more-], body div.container #disqus_thread .dsq-by, body div.container #disqus_thread .dsq-pagination, body div.container #disqus_thread #dsq-comments-title {
   display: none !important;
 }
-/* line 163, ../sass/screen.sass */
-#disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
+/* line 136, ../sass/screen.sass */
+body div.container #disqus_thread #dsq-content #dsq-comments .dsq-comment-footer {
   margin-top: 5px;
 }
-/* line 165, ../sass/screen.sass */
-#disqus_thread h3 {
+/* line 138, ../sass/screen.sass */
+body div.container #disqus_thread h3 {
   margin-bottom: 0;
 }
-
-/* Header */
-/* line 169, ../sass/screen.sass */
-#header {
-  padding-bottom: 20px;
+/* line 141, ../sass/screen.sass */
+body div.container div#footer {
   width: 80%;
-  float: left;
-}
-/* line 174, ../sass/screen.sass */
-#header p {
-  margin: 0;
-  padding: 0;
-  margin-top: -15px;
-  font-size: 12px;
-  font-style: italic;
-}
-
-/* line 181, ../sass/screen.sass */
-#contact {
-  width: 17%;
-  text-align: right;
-  float: right;
-  margin-top: 26px;
-}
-/* line 187, ../sass/screen.sass */
-#contact p {
-  margin: 0;
-  padding: 0;
-}
-
-/* Footer */
-/* line 192, ../sass/screen.sass */
-#footer {
-  width: 80%;
-  margin: 50px auto 0 auto;
+  margin: 20px auto 0 auto;
   text-align: center;
   font-size: 12px;
   padding: 10px 0 20px 0;
   border-top: 1px solid #cccccc;
 }
-
-/* Pagination */
-/* line 202, ../sass/screen.sass */
-#pagination {
-  height: 35px;
-  border-bottom: 1px solid #d9d9d9;
-}
-/* line 206, ../sass/screen.sass */
-#pagination .left {
-  float: left;
-}
-/* line 209, ../sass/screen.sass */
-#pagination .right {
-  float: right;
-}
-
-/* line 212, ../sass/screen.sass */
-#error {
+/* line 149, ../sass/screen.sass */
+body div.container #error {
   clear: both;
   width: 80%;
   margin: 0 auto;
@@ -295,14 +207,4 @@ p code, ol code {
   padding: 13px;
   margin-bottom: 15px;
   text-align: center;
-}
-
-/* line 226, ../sass/screen.sass */
-.weak {
-  color: #b9d3ee;
-}
-
-/* line 229, ../sass/screen.sass */
-.ok {
-  color: #7093db;
 }
