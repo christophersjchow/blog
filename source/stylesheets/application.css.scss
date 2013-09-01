@@ -10,6 +10,19 @@ body {
     font-size: 25px;
   }
 
+  a {
+    color: $link-color;
+  }
+
+  a:visited {
+    color: $link-color;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $link-color;
+  }
+
   @media (min-width: $screen-tablet) {
     h1 {
       font-size: 30px;
@@ -70,16 +83,20 @@ body {
       }
 
       .social {
+        padding: 0;
+        text-align: right;
+
         a {
           color: $text-color;
         }
 
-        a:hover {
+        a:hover, a:visited:hover {
           color: $link-color;
         }
 
-        padding: 0;
-        text-align: right;
+        a:visited {
+          color: $text-color;
+        }
 
         i {
           margin-left: 4px;
