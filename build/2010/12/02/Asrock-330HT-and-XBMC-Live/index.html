@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+    <link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/syntax.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div id='bar'></div>
+    <div class='container'>
+      <header>
+        <div class='col-xs-7 col-md-6 nav'>
+          <a href='/'>
+            <span id="first">yield</span> <span id="second">@chow</span>
+          </a>
+        </div>
+        <div class='col-xs-5 col-md-6 social'>
+          <a href='mailto:chris@chowie.net'>
+            <i class='icon-envelope-alt'></i>
+          </a>
+          <a href='https://twitter.com/Soliah'>
+            <i class='icon-twitter'></i>
+          </a>
+          <a href='https://github.com/Soliah'>
+            <i class='icon-github'></i>
+          </a>
+          <a href='http://stackoverflow.com/users/140578/soliah'>
+            <i class='icon-stackexchange'></i>
+          </a>
+        </div>
+      </header>
+      <section class='content'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <div class='post'>
+              <h1>Asrock 330HT and XBMC Live</h1>
+              <time>Dec  2, 2010</time>
+              <p>I&rsquo;ve been searching for a way to play my media for quite awhile and could never find anything that would do everything that I wanted. Specifically I wanted full Substation Alpha support, and none of the embedded media player devices on the market have this fully supported. The latest firmware(s) for the A/C-200/210 Popcorn hours provide some support but it&rsquo;s still not quite there yet. So I decided to setup an Ion based nettop with XBMC. The following documents how I got XBMC Live CD Dharma working.  </p>
+              
+              <h2>LiveCD</h2>
+              
+              <p>First thing you&rsquo;ll need is to download and burn the LiveCD from <a href="http://xbmc.org/download">here</a>. I didn&rsquo;t bother with trying to make a USB bootable with this image as the Asrock 330HT has a DVD drive.  Boot off the CD and follow the prompts to install. I just stuck with the recommended settings. Make sure to use xbmc/xbmc as the username and password for the user you create to allow XBMC to autostart.</p>
+              
+              <p>Once XBMC has started up there are 2 things that need to be setup. Sound and the IR Remote. SSH in to the box using the user you just created. (I&rsquo;m gonna assume that anyone who follows this will have the box hooked up via ethernet). If it isn&rsquo;t on the network, press Control-F1 to switch sessions. To get back to XBMC press Control-F7 or Control-F8. (I can&rsquo;t remember which).</p>
+              
+              <h2>Sound</h2>
+              
+              <p>Make sure HDMI is selected as the audio output device in XBMC. Now SSH in and run <code>alsamixer</code> on the command line. This will allow you to un-mute <code>S/PDIF</code>, <code>S/PDIF Default PCM</code>, <code>S/PDIF 1</code> by selecting each channel and pressing <code>m</code>. Then hit <code>esc</code> to quit. Run <code>sudo alsactl store</code> to save the settings across reboots. Sound should now be output through HDMI. </p>
+              
+              <h2>Remote</h2>
+              
+              <p>The current RC1 LiveCD comes with kernel 2.6.32-25. Asrock have released a driver for the IR remote that supports this kernel.</p>
+              
+              <p>Download and unzip the driver:</p>
+              <pre class="highlight text">wget &#39;ftp://174.142.97.10/drivers/Nettop/Ubuntu/IR(10.04)2.6.32-25.zip&#39;&#x000A;unzip IR(10.04)2.6.32-25.zip</pre>
+              <p>This will extract a 32bit and 64bit driver to the current directory. To check which architecture you&rsquo;re running on run <code>uname -a | cut -d&#39; &#39; -f12</code> on the command line. If you get <code>i686</code> then the system is on 32bit. Otherwise it&rsquo;s 64 bit.</p>
+              
+              <p>To install the driver run:</p>
+              <pre class="highlight text">sudo dpkg -i lirc-nct677x-1.0.4-ubuntu10.04_kernel2.6.32-25.deb</pre>
+              <p>Now run <code>sudo reboot</code> to restart the system and the remote should work.</p>
+              
+              <h2>Wireless</h2>
+              
+              <p>Getting wireless working is as simple as installing a few packages.</p>
+              <pre class="highlight text">sudo apt-get install wicd wicd-curses</pre>
+              <p>Then start wicd by running:</p>
+              <pre class="highlight text">sudo /etc/init.d/wicd start</pre>
+              <p>Run <code>wicd-curses</code> and you&rsquo;ll be presented with a method of choosing networks.</p>
+              
+              <ol>
+              <li>Highlight the one you want to connect to and press the right cursor key to configure it</li>
+              <li>Scroll down and check &lsquo;Automatically connect to this network&rsquo;</li>
+              <li>Scroll down to the botton and enter the wireless key</li>
+              <li>Press <code>F10</code> to save. You should be back at the list of networks with your network highlighted</li>
+              <li>Press <code>Shift-c</code> to connect to the network</li>
+              </ol>
+              
+              <p>Once connected (check status in the bottom left), press <code>q</code> to quit</p>
+              
+              <p>Note that I had pretty bad wireless performance when I tried this. I couldn&rsquo;t stream anything with constant buffering so your mileage may vary. I&rsquo;d strongly recommend using ethernet.</p>
+              
+              <h2>Unicode Support</h2>
+              
+              <p>XBMC supports unicode. To enable it change the default font to Arial under Appearance settings then reboot.</p>
+              
+              <h2>CPU Temp</h2>
+              
+              <p>GPU temps are reported without having to install anything extra, but CPU temperature monitoring requires lm-sensors. Run the following and follow the prompts.</p>
+              <pre class="highlight text">sudo apt-get install lm-sensors&#x000A;sudo sensors-detect</pre>
+              <h2>advancedsettings.xml</h2>
+              
+              <p>There are lots of settings that aren&rsquo;t configurable via the GUI. These are set in <code>.xbmc/userdata/advancedsettings.xml</code>. </p>
+              
+              <p>Here is a <a href="http://gist.github.com/724740">link</a> to mine for reference. </p>
+              
+              <h2>Scraping and Anime</h2>
+              
+              <p>When settings a source make sure to configure the scraper (TheTVDB). Set it to prefer posters and for Anime select absolute numbering.</p>
+              <hr>
+              <div id='disqus_thread'></div>
+              <noscript>
+                <a href='http://chowie.disqus.com/?url=ref'>
+                  View the discussion thread.
+                </a>
+              </noscript>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          &copy; 2011-13 Christopher Chow. Powered by
+          <a href='http://middlemanapp.com'>Middleman.</a>
+          Hosted on
+          <a href='http://http://pages.github.com'>GitHub Pages</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/javascripts/application.js" type="text/javascript"></script>
+  <script src="http://disqus.com/forums/chowie/embed.js" type="text/javascript"></script>
+</html>
+
