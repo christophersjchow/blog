@@ -1,10 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
-@import url(http://fonts.googleapis.com/css?family=Rufina:400,700);
 @import "bootstrap";
 @import "overrides";
 
 body {
+  font-family: "Source Sans Pro"
+
   h1 {
     font-size: 25px;
   }
@@ -27,6 +28,11 @@ body {
     min-height: 400px;
     max-width: 920px;
     margin: 0 auto;
+    padding-bottom: 30px;
+
+    @media (min-width: $screen-tablet) {
+      padding-bottom: 0;
+    }
 
     header {
       height: 60px;
@@ -89,6 +95,7 @@ body {
 
       .archive {
         margin: 0;
+        padding-bottom: 20px;
 
         .title {
           padding: 0;
@@ -119,7 +126,7 @@ body {
           @media (min-width: $container-lg-desktop) {
             height: 34px;
             margin: -43px 0 0 -135px;
-            padding: 5px 10px 0 0;
+            padding: 2px 17px 0 0;
             float: left;
             text-align: right;
             border-right: 5px solid $gray-light;
@@ -144,9 +151,19 @@ body {
   }
 
   footer {
+    height: 100px;
+    width: 200px;
     color: $gray-light;
     text-align: center;
     margin: 0 auto;
-    padding: 50px 0 0 20px;
+
+    @media (min-width: $container-tablet) {
+      padding-top: 35px;
+      min-width: 350px;
+    }
+
+    @media (min-width: $container-desktop) {
+      min-width: 600px;
+    }
   }
 }

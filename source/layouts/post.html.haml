@@ -2,6 +2,9 @@
   - content_for :scripts do
     = javascript_include_tag "http://disqus.com/forums/chowie/embed.js"
 
+  - content_for :title do
+    = current_page.title
+
   .post
     %h1= current_page.title
     %time= current_page.date.strftime("%b %e, %Y")

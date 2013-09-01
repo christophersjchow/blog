@@ -5,6 +5,10 @@
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
     = stylesheet_link_tag "application", "syntax"
     %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :rel => "stylesheet"}
+    - if content_for?(:title)
+      %title= "yield @chow | #{yield_content :title}"
+    - else
+      %title= "yield @chow"
   %body
     #bar
 
@@ -29,13 +33,11 @@
           .col-md-12
             = yield
 
-    %footer.container
-      .row
-        .col-md-12
-          &copy; 2011-13 Christopher Chow. Powered by
-          %a{:href => "http://middlemanapp.com"} Middleman.
-          Hosted on
-          %a{:href => "http://http://pages.github.com"} GitHub Pages
+    %footer
+      &copy; 2011-13 Christopher Chow. Powered by
+      %a{:href => "http://middlemanapp.com"} Middleman.
+      Hosted on
+      %a{:href => "http://http://pages.github.com"} GitHub Pages
 
 
   = javascript_include_tag "application"
