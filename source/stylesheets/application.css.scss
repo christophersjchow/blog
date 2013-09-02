@@ -131,6 +131,15 @@ body {
       }
 
       .post {
+        img {
+          padding: 5px 0;
+          margin: 0 auto;
+
+          @media (min-width: $container-tablet) {
+            padding: 20px 0;
+          }
+        }
+
         @media (min-width: $container-lg-desktop) {
           time + p {
             margin-top: 20px;
@@ -142,8 +151,9 @@ body {
 
           @media (min-width: $container-lg-desktop) {
             height: 34px;
-            margin: -43px 0 0 -135px;
-            padding: 2px 17px 0 0;
+            line-height: 1.1;
+            margin: -43px 0 0 -127px;
+            padding: 7px 14px 0 0;
             float: left;
             text-align: right;
             border-right: 5px solid $gray-light;
