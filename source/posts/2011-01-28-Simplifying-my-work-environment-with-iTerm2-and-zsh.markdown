@@ -15,7 +15,7 @@ I was already using zsh for my shell, in addition to using the great scripts pro
 
 The `*` indicates dirty and `?` indicates untracked changes.
 
-<img src="/images/posts/2011-01-28-001.png" />
+<img class="img-responsive" src="http://f.cl.ly/items/410l461G1e0g3F3X3q3E/Image%202013.09.02%208%3A53%3A08%20PM.png" />
 
 As time goes by the colour of the time changes from green to yellow to red. I got rid of the fatal error and changed the time since last commit to include days and hours instead of just minutes. I've also made the color neutral when the working directory is clean.
 
