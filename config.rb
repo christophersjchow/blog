@@ -35,11 +35,15 @@ set :css_dir, "stylesheets"
 set :js_dir, "javascripts"
 set :images_dir, "images"
 
+# Pretty URLs.
+activate :directory_indexes
+
 after_configuration do
   sprockets.append_path Modernizr.path
 end
 
 # page "/feed.xml", :layout => false
+page "/sitemap.xml", :layout => false
 page "/index.html", :layout => :application
 with_layout :post do
   page "/posts/*"
@@ -47,8 +51,6 @@ end
 
 # Build-specific configuration
 configure :build do
-  # Pretty URLs.
-  activate :directory_indexes
 
   # For example, change the Compass output style for deployment
   activate :minify_css
