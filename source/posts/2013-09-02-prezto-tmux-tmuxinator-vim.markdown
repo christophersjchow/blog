@@ -16,7 +16,7 @@ thank [Sorin](https://github.com/sorin-ionescu) enough for his hard and rigorous
 
 ## vim
 
-I've now got a more full featured [vim setup](https://github.com/Soliah/dotfiles) now, and feel like I've progressed with my vim-fu significantly. (I recommend having a look at the [Practical Vim](http://pragprog.com/book/dnvim/practical-vim) book if you're looking to improve your vim skills). I now use [base16](https://github.com/chriskempson/base16) in both iTerm2 and vim. The setup is actually a big tricky for the 256 colour variant. You have to:
+I've now got a more full featured [vim setup](https://github.com/Soliah/dotfiles) now, and feel like I've progressed with my vim-fu significantly. (I recommend having a look at the [Practical Vim](http://pragprog.com/book/dnvim/practical-vim) book if you're looking to improve your vim skills). I now use [base16](https://github.com/chriskempson/base16) in both iTerm2 and vim. The setup is actually a bit tricky for the 256 colour variant. You have to:
 
   1. Load the [iTerm2](https://github.com/chriskempson/base16-iterm2) colour pallete into your iTerm2 profile
   2. Make sure the appropriate [shell script] is run at shell load to change the 256 colour space. I've done this by placing the script in `~/.bin/base16-tomorrow.sh` and running `source ~/.bin/base16-tomorrow.sh` in my `.zshrc`
