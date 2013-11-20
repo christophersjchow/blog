@@ -4,8 +4,8 @@ gem "middleman"
 gem "middleman-blog"
 gem "middleman-syntax"
 gem "middleman-gh-pages"
-gem "redcarpet"
+gem "redcarpet", "~> 3.0.0", git: "git@github.com:vmg/redcarpet.git"
 gem "builder"
 
-gem "bootstrap-sass", :github => "thomas-mcdonald/bootstrap-sass", :branch => "3", :require => false
+gem "bootstrap-sass"
 gem "modernizr"
