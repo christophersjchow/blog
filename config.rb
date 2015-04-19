@@ -1,11 +1,6 @@
-require "redcarpet"
-
 Time.zone = "Australia/Sydney"
 
-activate :syntax,
-  :linenos => "inline",
-  :anchorlinenos => true,
-  :linenostart => 2
+activate :syntax, line_numbers: true, inline_theme: "github"
 
 activate :blog do |blog|
   # blog.prefix = "blog"
@@ -38,20 +33,12 @@ set :images_dir, "images"
 # Pretty URLs.
 activate :directory_indexes
 
-after_configuration do
-  sprockets.append_path Modernizr.path
-end
-
-# page "/feed.xml", :layout => false
-page "/sitemap.xml", :layout => false
-page "/index.html", :layout => :application
-with_layout :post do
-  page "/posts/*"
-end
+page "/sitemap.xml", layout: false
+page "/index.html", layout: :application
+page "/posts/*", layout: :post
 
 # Build-specific configuration
 configure :build do
-
   # For example, change the Compass output style for deployment
   activate :minify_css
 
