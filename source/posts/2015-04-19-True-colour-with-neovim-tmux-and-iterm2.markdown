@@ -10,11 +10,15 @@ iTerm2](https://iterm2.com/nightly/latest).
 
 Next let's install the latest version of Neovim:
 
-    brew install neovim --head
+```shell
+brew install neovim --head
+```
 
 If you've already installed it:
 
-    brew reinstall neovim
+```shell
+brew reinstall neovim
+```
 
 Next for convenience I've updated my aliases for starting up vim to set the environment variable required to
 enable true colour in Neovim:
@@ -25,7 +29,9 @@ enable true colour in Neovim:
 
 I also symlink my `.vimrc` to `.nvimrc` for convenience:
 
-    ln -nfs ~/.vimrc ~/.nvimrc
+```shell
+ln -nfs ~/.vimrc ~/.nvimrc
+```
 
 If you were using 256 colours with vim before, say with the [base16](https://github.com/chriskempson/base16-vim) colour
 schemes, you'll want to remove the 256 colour space setting:
@@ -40,7 +46,9 @@ Starting Neovim now should give you true colours. Here's a screenshot of Macvim 
 Last thing is to install a patched version of tmux that has true colour support. [Christian Hopps](https://github.com/choppsv1) has a repository
 of homebrew recipes with patched versions of tmux, vim and emacs. Let's install tmux from his repo:
 
-    " brew uninstall tmux
-    " brew install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
+```shell
+brew uninstall tmux
+brew install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
+```
 
 Now make sure to exit all existing tmux sessions and you should have true colour support.
