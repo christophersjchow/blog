@@ -11,7 +11,8 @@ iTerm2](https://iterm2.com/nightly/latest).
 Next let's install the latest version of Neovim:
 
 ```shell
-brew install neovim --head
+brew tap neovim/homebrew-neovim
+brew install --HEAD neovim
 ```
 
 If you've already installed it:
