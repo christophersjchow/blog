@@ -1,6 +1,6 @@
 Time.zone = "Australia/Sydney"
 
-activate :syntax, line_numbers: true, inline_theme: "github"
+activate :syntax, line_numbers: false, inline_theme: "github"
 
 activate :blog do |blog|
   # blog.prefix = "blog"

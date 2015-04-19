@@ -35,7 +35,7 @@ schemes, you'll want to remove the 256 colour space setting:
 
 Starting Neovim now should give you true colours. Here's a screenshot of Macvim and Neovim side by side:
 
-![screen shot 2015-04-19 at 2 23 57 pm](https://cloud.githubusercontent.com/assets/141213/7218166/9ad7fbf6-e6a0-11e4-9481-39a5eb095c5e.png)
+<img class="img-responsive" src="https://cloud.githubusercontent.com/assets/141213/7218166/9ad7fbf6-e6a0-11e4-9481-39a5eb095c5e.png">
 
 Last thing is to install a patched version of tmux that has true colour support. [Christian Hopps](https://github.com/choppsv1) has a repository
 of homebrew recipes with patched versions of tmux, vim and emacs. Let's install tmux from his repo:
