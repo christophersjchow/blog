@@ -4,7 +4,7 @@
     %meta{:charset => "UTF-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
     = stylesheet_link_tag "application", "syntax"
-    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :rel => "stylesheet"}
+    %link{:href => "https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :rel => "stylesheet"}
     - if content_for?(:title)
       %title= "yield @chow | #{yield_content :title}"
     - else
@@ -25,7 +25,7 @@
             %i{:class => "icon-twitter"}
           %a{:href => "https://github.com/Soliah"}
             %i{:class => "icon-github"}
-          %a{:href => "http://stackoverflow.com/users/140578/soliah"}
+          %a{:href => "https://stackoverflow.com/users/140578/soliah"}
             %i{:class => "icon-stackexchange"}
 
       %section.content
@@ -35,9 +35,9 @@
 
     %footer
       &copy; 2011-15 Christopher Chow. Powered by
-      %a{:href => "http://middlemanapp.com"} Middleman.
+      %a{:href => "https://middlemanapp.com"} Middleman.
       Hosted on
-      %a{:href => "http://pages.github.com"} GitHub Pages
+      %a{:href => "https://pages.github.com"} GitHub Pages
 
 
   = javascript_include_tag "application"
