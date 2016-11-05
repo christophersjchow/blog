@@ -1,0 +1,6 @@
+name: blog
+windows:
+  - vim: vim
+  - terminal:
+  - terminal:
+  - server: be middleman
