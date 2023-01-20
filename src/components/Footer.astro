@@ -1,0 +1,21 @@
+---
+import { MY_NAME } from "../config";
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="text-xs leading-[1.75] mt-4">
+  <div>
+    &#169; {currentYear}
+    {MY_NAME}
+  </div>
+</footer>
+
+<style>
+  footer {
+    grid-area: footer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
