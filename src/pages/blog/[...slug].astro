@@ -29,7 +29,7 @@ const { Content } = await entry.render();
 
 <PageLayout>
   <BlogPostMeta
-    title={entry.data.title}
+    title={`${entry.data.title} | ${SITE_TITLE}`}
     description={entry.data.external ? undefined : entry.data.description}
     publishDate={entry.data.date.toISOString()}
     pagePath={`/blog/${slug}`}
