@@ -5,6 +5,10 @@ description: "Setting up Jumba VPS for Rails"
 date: 2010-11-18
 ---
 
+_*This post is extremely old and contains outdated information. It is being kept only for historical purposes.*_
+
+---
+
 The [Jumba VPS'](http://www.jumba.com.au/vps) are a great affordable way to get
 a VPS for testing and basic hosting. However, setting up a VPS is not easy and
 I ran into a few road blocks getting Rails running on my server. I decided to

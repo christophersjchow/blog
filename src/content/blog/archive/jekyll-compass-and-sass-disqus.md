@@ -3,6 +3,10 @@ title: Jekyll, Compass and SASS, Disqus
 date: 2011-01-27
 ---
 
+_**This post is extremely old and contains outdated information. It is being kept only for historical purposes.**_
+
+---
+
 ## Jekyll
 
 After a minor trial with Posterous I decided that I didn't particularly like

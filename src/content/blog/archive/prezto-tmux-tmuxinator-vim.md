@@ -3,6 +3,10 @@ title: prezto, tmux, tmuxinator and vim
 date: 2013-09-02
 ---
 
+_**This post is extremely old and contains outdated information. It is being kept only for historical purposes.**_
+
+---
+
 It's been a long time since I've made a post, so to ease back into regular
 posting I thought I'd start with a post on what's changed with my current
 working environment.

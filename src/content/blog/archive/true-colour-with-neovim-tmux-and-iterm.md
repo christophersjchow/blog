@@ -3,6 +3,10 @@ title: True colour (24 bit) with Neovim, tmux and iTerm2
 date: 2015-04-19
 ---
 
+_**This post is extremely old and contains outdated information. It is being kept only for historical purposes.**_
+
+---
+
 Neovim [recently](https://github.com/neovim/neovim/pull/2198) added 24 bit true
 colour support so I thought I'd get the rest of my environment setup with true
 colour. First thing is to download and intall the [latest nightly build of

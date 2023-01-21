@@ -3,9 +3,11 @@ title: Simplifying my work environment with iTerm2 and zsh
 date: 2011-01-28
 ---
 
-_*This post has now been superseded by my [new work setup](/blog/archive/prezto-tmux-tmuxinator-vim)*_
+_**This post is extremely old and contains outdated information. It is being kept only for historical purposes.**_
 
 ---
+
+_*This post has now been superseded by my [new work setup](/blog/archive/prezto-tmux-tmuxinator-vim)*_
 
 After watching [PeepCode](http://www.peepcode.com)'s latest screencast called [Play by Play](http://peepcode.com/products/play-by-play-bernhardt) (great cast btw), I really liked how Gary Bernhardt kept things simple by really only using one terminal window, taking full advantage of `^z` with `fg`. I decided to make a few changes to my prompt in an attempt to simplify my coding setup, taking inspiration from Gary's setup. Up until now I had actually been using MacVim for most of my coding, `⌘Tab`ing to switch between code and the Terminal. I also used lots of tabs in Terminal to separate tasks, though this often made it hard to find a particular session.
 

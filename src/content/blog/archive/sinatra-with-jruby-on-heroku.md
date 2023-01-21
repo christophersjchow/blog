@@ -4,9 +4,11 @@ title: "Sinatra with JRuby on Heroku"
 date: 2011-08-28
 ---
 
-_*This post is now deprecated in favour of Heroku's [build packs](https://github.com/jruby/heroku-buildpack-jruby).*_
+_**This post is extremely old and contains outdated information. It is being kept only for historical purposes.**_
 
 ---
+
+_*This post is now deprecated in favour of Heroku's [build packs](https://github.com/jruby/heroku-buildpack-jruby).*_
 
 A couple of days ago Heroku [announced](http://blog.heroku.com/archives/2011/8/25/java/) support for Java on their servers. I took the opportunity to try and get a Sinatra app running on Heroku using the Java support to boostrap JRuby.
 

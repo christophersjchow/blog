@@ -4,6 +4,10 @@ description:
 date: 2011-02-17
 ---
 
+_**This post is extremely old and contains outdated information. It is being kept only for historical purposes.**_
+
+---
+
 This seems to be a popular question on #rubyonrails@Freenode IRC channel. I
 decided to give it a go in a dummy app and this is what I ended up with in my
 `routes.rb`.

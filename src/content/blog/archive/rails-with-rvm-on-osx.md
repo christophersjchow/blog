@@ -3,6 +3,10 @@ title: Rails with RVM on OSX
 date: 2011-02-16
 ---
 
+_**This post is extremely old and contains outdated information. It is being kept only for historical purposes.**_
+
+---
+
 I realise that there are plenty of tutorials online that show how to get Rails
 setup on OSX. A lot of them are very brief and don't explain much about what's
 going on. I've decided to write a guide that will flesh out your typical Rails
