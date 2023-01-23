@@ -1,4 +1,5 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "display": "theme/bubblegum"
+  "display": "theme/bubblegum",
+  "exclude": ["functions/**/*"]
 }
