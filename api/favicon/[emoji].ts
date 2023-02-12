@@ -1,7 +1,11 @@
 import { parse } from "twemoji-parser";
+import type { VercelRequest, VercelResponse } from "@vercel/node";
 import fetch from "node-fetch";
 
-export default function handler(request, response) {
+export default async function handler(
+  request: VercelRequest,
+  response: VercelResponse
+) {
   const { emoji: encodedEmoji } = request.query;
 
   if (Array.isArray(encodedEmoji)) {
@@ -14,6 +18,11 @@ export default function handler(request, response) {
   if (!twemoji) {
     return response.status(404);
   } else {
-    return fetch(twemoji.url);
+    const svg = await fetch(twemoji.url);
+    const body = await svg.buffer();
+    return response
+      .status(200)
+      .setHeader("content-type", "image/svg+xml")
+      .send(body);
   }
 }
