@@ -1,10 +1,7 @@
 import { parse } from "twemoji-parser";
-import type { VercelRequest, VercelResponse } from "@vercel/node";
+import fetch from "node-fetch";
 
-export default function handler(
-  request: VercelRequest,
-  response: VercelResponse
-) {
+export default function handler(request, response) {
   const { emoji: encodedEmoji } = request.query;
 
   if (Array.isArray(encodedEmoji)) {
