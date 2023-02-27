@@ -16,7 +16,7 @@
     "@astrojs/prism": "2.0.0",
     "@astrojs/rss": "2.1.0-beta.0",
     "@astrojs/sitemap": "^1.0.1",
-    "@astrojs/tailwind": "3.0.0-beta.1",
+    "@astrojs/tailwind": "3.0.1",
     "@tailwindcss/typography": "^0.5.9",
     "@types/twemoji-parser": "^13.1.1",
     "astro": "2.0.15",
