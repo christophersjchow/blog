@@ -7,6 +7,7 @@ import rehypeRewrite from "rehype-rewrite";
 
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
+import vercel from "@astrojs/vercel/static";
 
 /* 
   We are doing some URL mumbo jumbo here to tell Astro what the URL of your website will be.
@@ -69,6 +70,9 @@ function rewriteHeadings(node) {
 export default defineConfig({
   server: { port: SERVER_PORT },
   site: BASE_URL,
+  adapter: vercel({
+    analytics: true,
+  }),
   markdown: {
     syntaxHighlight: "prism",
     remarkPlugins: [
