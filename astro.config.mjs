@@ -4,7 +4,6 @@ import mdx from "@astrojs/mdx";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import rehypeRewrite from "rehype-rewrite";
-
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 
@@ -31,62 +30,49 @@ let BASE_URL = LOCALHOST_URL;
 if (isBuild) {
   BASE_URL = LIVE_URL;
 }
-
 function isPrimaryHeading(tag) {
   return ["h2"].includes(tag);
 }
 function isSecondaryHeading(tag) {
   return ["h3", "h4", "h5", "h6"].includes(tag);
 }
-
 function isHeading(tag) {
   return isPrimaryHeading(tag) || isSecondaryHeading(tag);
 }
-
 function rewriteHeadings(node) {
-  const primaryHeadingClasses =
-    "pl-6 relative block leading-[150%] after:absolute after:content-[''] after:w-2 after:h-full after:top-0 after:left-0 after:bg-primary-green";
+  const primaryHeadingClasses = "pl-6 relative block leading-[150%] after:absolute after:content-[''] after:w-2 after:h-full after:top-0 after:left-0 after:bg-primary-green";
   const secondaryHeadingClasses = "relative block leading-[150%]";
-
   if (node.type == "element" && isHeading(node.tagName)) {
-    let headerClass = isPrimaryHeading(node.tagName)
-      ? primaryHeadingClasses
-      : secondaryHeadingClasses;
-
-    node.children = [
-      {
-        type: "element",
-        tagName: "span",
-        properties: {
-          class: headerClass,
-        },
-        children: node.children,
+    let headerClass = isPrimaryHeading(node.tagName) ? primaryHeadingClasses : secondaryHeadingClasses;
+    node.children = [{
+      type: "element",
+      tagName: "span",
+      properties: {
+        class: headerClass
       },
-    ];
+      children: node.children
+    }];
   }
 }
 
+// https://astro.build/config
 export default defineConfig({
-  server: { port: SERVER_PORT },
+  server: {
+    port: SERVER_PORT
+  },
   site: BASE_URL,
   markdown: {
     syntaxHighlight: "prism",
-    remarkPlugins: [
-      remarkToc,
-      [
-        remarkCollapse,
-        {
-          test: "Table of contents",
-        },
-      ],
-    ],
-    rehypePlugins: [[rehypeRewrite, { rewrite: rewriteHeadings }]],
+    remarkPlugins: [remarkToc, [remarkCollapse, {
+      test: "Table of contents"
+    }]],
+    rehypePlugins: [[rehypeRewrite, {
+      rewrite: rewriteHeadings
+    }]]
   },
-  integrations: [
-    mdx(),
-    sitemap(),
-    tailwind({
-      config: { applyBaseStyles: false },
-    }),
-  ],
+  integrations: [mdx(), sitemap(), tailwind({
+    config: {
+      applyBaseStyles: false
+    }
+  })]
 });
